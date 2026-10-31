@@ -1,0 +1,47 @@
+# Build output
+build/
+out/
+cmake-build-*/
+bin/
+obj/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.ninja
+compile_commands.json
+
+# Visual Studio / MSVC
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.*
+Debug/
+Release/
+x64/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.ruff_cache/
+.pytest_cache/
+dist/
+
+# Generated artifacts (directories are kept via .gitkeep)
+/data/clean/*
+!/data/clean/.gitkeep
+/data/anomalous/*
+!/data/anomalous/.gitkeep
+/data/models/*
+!/data/models/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

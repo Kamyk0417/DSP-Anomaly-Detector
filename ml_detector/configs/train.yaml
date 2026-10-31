@@ -1,0 +1,22 @@
+version: 1
+seed: 42
+data:
+  clean_dir: data/clean
+  anomalous_dir: data/anomalous
+  window: 1024
+  stride: 512
+model:
+  arch: autoencoder      # autoencoder | lstm_ae | transformer_ae
+  latent_dim: 32
+  hidden: 128
+input:
+  mode: raw              # raw | fft | both
+train:
+  batch_size: 64
+  epochs: 50
+  lr: 1.0e-3
+  device: cuda           # cuda | cpu
+eval:
+  threshold_percentile: 99.0
+output:
+  dir: data/models

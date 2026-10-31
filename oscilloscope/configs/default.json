@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "sample_rate_hz": 100000.0,
+  "adc": {
+    "bits": 12,
+    "v_min": -5.0,
+    "v_max": 5.0
+  }
+}

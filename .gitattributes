@@ -1,0 +1,18 @@
+# Normalise line endings in the repository; keep sample/checkpoint files binary.
+* text=auto
+
+*.c      text
+*.h      text
+*.py     text
+*.md     text
+*.json   text
+*.yaml   text
+*.yml    text
+*.txt    text
+*.toml   text
+CMakeLists.txt text
+
+*.bin    binary
+*.pt     binary
+*.png    binary
+*.bmp    binary

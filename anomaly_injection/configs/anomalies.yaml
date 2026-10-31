@@ -1,0 +1,15 @@
+version: 1
+input_dir: data/clean
+output_dir: data/anomalous
+seed: 42
+anomalies:
+  - type: spike
+    start_sample: 12000
+    params:
+      amplitude_multiplier: 3.0
+      width_samples: 5
+  - type: noise_burst
+    start_sample: 40000
+    params:
+      snr_db: -5
+      duration_samples: 2000
